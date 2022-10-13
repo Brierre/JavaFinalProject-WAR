@@ -13,18 +13,16 @@ public class Player {
 		i = 1;
 		this.score += i; //adding int i because in a future version of the game, if there's a war, we will have more points to give than one 
 		//int temp = this.score; //used for testing
-		System.out.println("Score: " + p1.getScore() + " : " + p2.getScore());
+		System.out.println("Score: " + p1.getName() + ":" + p1.getScore() + ", " + p2.getName() + ":" + p2.getScore());
 		System.out.println();
 	}
 	
-	public int flip() { 						//flip the players card
+	public int flip() { 											//flip the players card
 		Card card = hand.get(0);
 		System.out.println(card.toString());
-		int value = card.getValue(); 			//value of the current card being flipped
+		int value = card.getValue(); 								//value of the current card being flipped
 		//System.out.print(value);
-		
-		hand.remove(0);							//remove the card from play
-
+		hand.remove(0);												//remove the card from play
 		return value;
 	}
 	

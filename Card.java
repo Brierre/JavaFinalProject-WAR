@@ -13,32 +13,30 @@ package finalProjectJava;
  * public static final int JACK = 11;
  * do for all face cards (QUEEN = 12, KING = 13, ACE = 14)
  * use .toString() method to print the whole card name
- * 
  */
-
 
 public class Card {
 	
 	//constant variables
-	public static final int CLUBS = 'C';
-	public static final int DIAMONDS = 'D';
-	public static final int HEARTS = 'H';
-	public static final int SPADES = 'S';
+	public static final char CLUBS = 'C';
+	public static final char DIAMONDS = 'D';
+	public static final char HEARTS = 'H';
+	public static final char SPADES = 'S';
 	public static final int JACK = 11;
 	public static final int QUEEN = 12;
 	public static final int KING = 13;
 	public static final int ACE = 14;
 	
 	//global variables
-	public int value;
-	public char name;
+	private int value;
+	private char name;
 
 	//constructors
 	Card() {
-		this.value = value;
-		this.name = name;
+		this.setValue(value);
+		this.setName(name);
 	}
-	
+
 	Card(int value, char name) {
 		this.value = value;
 		this.name  = name;
